@@ -4,7 +4,7 @@ import bodyParser from "body-parser";
 
 
 const app = express();
-const port = 3000;
+const port = process.env.X_ZOHO_CATALYST_LISTEN_PORT || 3001;
 const API_URL = "https://v2.jokeapi.dev/joke/Any";
 
 app.use(bodyParser.urlencoded({extended:true}));
