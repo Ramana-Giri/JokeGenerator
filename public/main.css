@@ -1,0 +1,12 @@
+.custom-shadow {
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.3);
+    
+}
+
+.custom-round {
+    border-radius: 12px;
+}
+
+.bg-image {
+    background-image: "pattern.svg";
+}
