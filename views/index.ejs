@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="main.css">
     <title>Jokeu Jokeu</title>
 </head>
-<body class="bg-image">
+<body class="category-<%= data.category.toLowerCase() %>">
+  <div class="emoji-pattern"></div>
   <div class="container vh-100"  >
       <div class="row justify-content-center align-items-center h-100">
-        <div class="col-md-6 text-center custom-shadow custom-round">
-          <h1 class="text-black my-4">Joke-ah kellu</h1>
+        <div class="col-md-6 text-center custom-shadow custom-round" id="white-box">
+          <h1 class="text-black my-4">Joke Generator</h1>
           <div class=" py-3 my-3 bg-black text-white custom-round shadow-sm">
               <h2 class="fw-bold"><%= data.setup %><%= locals.data.joke %></h2>
               <h3><%= locals.data.delivery %></h3>
@@ -69,7 +70,7 @@
           </div>
 
           <!-- Submit Button -->
-          <button type="submit" class="btn custom-round w-100 btn-primary my-3 fs-4">Innoru joke podu</button>
+          <button type="submit" class="btn custom-round w-100 btn-primary my-3 fs-4">Generate joke</button>
         </form>
       </div>
     </div>
